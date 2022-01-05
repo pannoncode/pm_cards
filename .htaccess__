@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  
+  
+  SetEnv DB_HOST mysql.rackhost.hu  
+  SetEnv DB_NAME c30372pmcard  
+  SetEnv DB_USER c30372drageron  
+  SetEnv DB_PASSWORD Drageronkasza13  
+
+ 
+  RewriteCond %{REQUEST_URI} ^.*public/(.*)
+  RewriteRule ^(.*)$ src/public/%1 [END]
+
+  
+  RewriteRule (.*)  src/index.php [QSA]
+</IfModule>
