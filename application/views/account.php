@@ -1,11 +1,11 @@
-<div class="card">
+<div class="card col-md-8">
   <div class="card-header">
     <h4 class="card-title">Felhasználó</h4>
   </div>
 
-  <div class="card-body">
-    <div class="row">
-      <div class="col-md-12">
+  <div class="card-body ">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-8">
         <form method="POST" action="index.php/Account/save">
           <div class="form-group">
             <label for="basicInput">Felhasználó név</label>

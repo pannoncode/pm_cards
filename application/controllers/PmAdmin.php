@@ -12,7 +12,7 @@ class PmAdmin extends CI_Controller {
         $output = [];
         $crud = new grocery_CRUD();
 
-        $crud->set_theme('datatables');
+        //$crud->set_theme('datatables');
         $crud->set_table('namelist_db');
         //$crud->set_subject('Nevek');
         $crud->set_relation('rank', 'ranks_db', 'rank_name');
@@ -44,7 +44,7 @@ class PmAdmin extends CI_Controller {
         $output = [];
         $crud = new grocery_CRUD();
 
-        $crud->set_theme('datatables');
+        //$crud->set_theme('datatables');
         $crud->set_table('machine_code_db');
         $crud->set_subject('Gépszám');
         $crud->required_fields('machine_code');
@@ -66,7 +66,7 @@ class PmAdmin extends CI_Controller {
     public function machineparts() {
         $output = [];
         $crud = new grocery_CRUD();
-        $crud->set_theme('datatables');
+        //$crud->set_theme('datatables');
         $crud->set_table('machine_part_db');
         $crud->set_subject('Géprész');
         $crud->required_fields('machine_part_name');
@@ -88,7 +88,7 @@ class PmAdmin extends CI_Controller {
     public function parts() {
         $output = [];
         $crud = new grocery_CRUD();
-        $crud->set_theme('datatables');
+        //$crud->set_theme('datatables');
         $crud->set_table('parts_db');
         $crud->set_subject('Alkatrész');
         $crud->required_fields('parts_name', 'article_number', 'mpn');
